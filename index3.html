@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+      <section>
+        <div class="circle"></div>
+        <header>
+            <a href="a"><img src="/asha/starbucks.png" class="logo"></a>
+            <ul>
+                <li><a href="a">Menu</a></li>
+                <li><a href="a">Rewards</a></li>
+                <li><a href="a">Gift Cards</a></li>
+            </ul>
+        </header>
+        <div class="content">
+           <div class="text">
+            <h2><span>Brewing Moments
+            </span> <br>One Cup at a Time</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, praesentium esse itaque, dolorem harum quisquam ipsum at eveniet repellendus molestias animi suscipit! Maiores, eos deserunt nemo aspernatur veniam saepe Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eligendi at corrupti culpa perferendis. Distinctio, voluptatum, nostrum in, quidem nobis veniam accusamus et ex quae id voluptate inventore modi dignissimos?
+            </p>
+            <a href="a">Learn More</a>
+           </div>
+           <div class="image">
+            <img src="/asha/images-removebg-preview.png" class="coffee">
+           </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="/asha/images-removebg-preview.png" onclick="imgchanger('/asha/images-removebg-preview.png');circlecolorchanger('#eb7495')"></li>
+            <li><img src="/asha/green cofee (1).png" onclick="imgchanger('/asha/green cofee (1).png');circlecolorchanger('#037246')"></li>
+            
+        </ul>
+         <ul class="social">
+            <!-- <li><img src="/asha/Facebook.png"></li> -->
+            <!-- <li><img src="/asha/twitter.png"></li> -->
+            <li><img src="/Users/Aasha Vishwakarma/Downloads/facebook (1).png"></li>
+            <li><img src="/Users/Aasha Vishwakarma/Downloads/twitter.png"></li>
+            <li><img src="/Users/Aasha Vishwakarma/Downloads/instagram (1).png"></li>
+        </ul>
+      </section> 
+      <script type="text/javascript">
+        function imgchanger(anything){
+            document.querySelector('.coffee').src = anything;
+        }
+        function circlecolorchanger(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+      </script>
+</body>
+</html>
